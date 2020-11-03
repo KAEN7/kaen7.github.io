@@ -1,12 +1,14 @@
 ---
-title : "My First Post"
+title : "React"
 category :
-    - hello
+    - React
 tag :
-    - hello
+    - React
 toc : true
 ---
 
-# my name is KAEN
+# 리액트 기본
 
-nice to meet you!
+## 리액트 불러오기
+리액트 최상단에 사용
+`import React from 'react';
