@@ -200,3 +200,161 @@ function Test(props) {
 
 export default Test
 ```
+
+### 조건부 렌더링
+- 조건이 참이냐 거짓이냐에 따라 다른 결과를 보여주는 것을 말함
+
+realTrue라는 props를 설정해보겠음
+```
+// App.js
+import React from 'react';
+import Test from './Test';
+
+function App() {
+    retrun <Test realTrue={true} />
+}
+
+export default App;
+```
+
+삼항 연산자를 사용해서 true면 뒤에 !가 붙게하겠음
+
+```
+// Test.js
+import React from 'react';
+
+function Test(realTrue) {
+    return (
+        <div>
+            조건부 랜더링
+            { realTrue ? <b>!</b> : null} 
+        </div>
+    )
+}
+
+export default Test;
+```
+
+realTrue 가 true이므로 조건부 랜더링! 으로 출력된다
+and를 사용해서 좀더 짧게 수정할 수도 있다
+
+```
+조건부 랜더링
+{ realTrue && <b>!<b> }
+```
+
+- props 값을 생략하면 기본값인 true로 설정됨
+
+### useState
+- 컴포넌트에서 동적인 값을 상태(state)라고 함
+- useState라는 함수는 컴포넌트에서 상태를 관리할 수 있게 해주는 함수
+
+```
+const [state, setState] = useState(상태의 기본값);
+```
+
+- input 상태 관리하기
+
+``` react
+import React, { useState } from 'react';
+
+function InputSample() {
+    const [text, setText] = useState('');
+
+    const onChange = e => {
+        setText(e.target.value);
+    }
+
+    const onReset = () => {
+        setText('');
+    }
+
+    return (
+        <div>
+            <input onChange={onChange} value={text}>
+            <button onClick={onReset}> 초기화 </button>
+            <div>
+                <b>값 : </b>
+                {text}
+            </div>
+        </div>
+    )
+}
+
+export default InputSample;
+```
+input 태그에 onChange 이벤트를 걸어서 이벤트가 발생할때마다 onChange 컴포넌트로 이동함
+
+onChange 컴포넌트에서는 이벤트의 value 값, 즉 input으로 들어온 값을 얻어서 state 값을 변경해줌
+
+### useState로 여러개의 input 관리하기(객체)
+
+```
+// InputSample.js
+import React, { useState } from 'react';
+
+function InputSample() {
+    const [inputs, setInputs] = useState({
+        name : '',
+        nickname: '',
+    })
+
+    const {name, nickname} = inputs;
+
+    const onChange = e => {
+        const {name, value} e.target;
+
+        //객체의 값 업데이트
+        setInputs({
+            ...inputs,
+            [name] : value
+        })
+    }
+
+    return (
+        <div>
+            <input name='name' placeholder='이름' onChange={onChagne} value={name} />
+            <input name = 'nickname' placeholder='닉네임' onChange={onChange} value={nickname} />
+            <div>
+                <b>값 : </b>
+                {name} {nickname}
+            </div>
+        </div>
+    )
+}
+
+export default InputSample
+```
+
+하나씩 해석해보겠음
+1. useState를 이용해서 state 변수인 inputs와 갱신 함수 setInputs를 설정해줌. 또한 inputs의 초기값으로 name과 nickname을 설정해줌
+
+```
+const [inputs, setInputs] = useState({
+    name: '',
+    nickname: ''
+})
+```
+
+2. 비구조화 할당으로 inputs 값을 name과 nickname에 할당해줌
+
+```
+const {name, nickname} = inputs;
+```
+
+3. input 태그에 이벤트함수로 onChange를 작성함
+input 태그에 들어온 값에 따라 name과 value를 이벤트 타겟을 이용해서 할당해줌
+객체의 값을 업데이트 해주려면 기존의 객체의 값을 복사해주어야됨(spread 연산자 사용)
+그리고 input 이벤트의 name 값이 무엇이냐에 따라 value 값을 지정해줌(name과 nickname 구분, [name]: value)
+
+```
+const onChange = e => {
+    const {name, value} = e.target;
+
+    //객체의 값 업데이트
+    setInputs({
+        ...inputs,
+        [name] : value
+    })
+}
+```
