@@ -97,4 +97,9 @@ context의 뜻은 맥락, 문맥임!
 참조 [Jaeeun_새싹개발자](https://blog.naver.com/jaeeun_98/222098143439 '네이버 블로그')
 
 
-lineWidth
+.lineWidth
+선의 두께를 설정함
+
+```
+ctx.lineWidth = value;
+```
