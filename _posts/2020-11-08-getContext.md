@@ -63,6 +63,7 @@ var ctx = canvase.getContext(contextType, contextAttributes);
         ```
         ctx.strokeStyle = #fff;
         ```
+        도형의 외곽선 색상을 지정하는 메소드
 
         - clearRect
         ```
@@ -99,4 +100,4 @@ var ctx = canvase.getContext(contextType, contextAttributes);
         시작점은 이전에 그려진 경로에 의해 결정되며, moveTo 메소드를 통해 시작점 변경이 가능
 
 
-참조 [네이버블로그](https://blog.naver.com/jaeeun_98/222098143439 'Jaeeun_새싹개발자')
+참조 [Jaeeun_새싹개발자](https://blog.naver.com/jaeeun_98/222098143439 '네이버 블로그')
