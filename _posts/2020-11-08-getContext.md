@@ -14,12 +14,6 @@ context 식별자가 지원되지 않을 경우 null을 반환함
 
 context의 뜻은 맥락, 문맥임!
 
-- 구문
-```
-var ctx = canvas.getContext(contextType);
-var ctx = canvase.getContext(contextType, contextAttributes);
-```
-
 - 파라미터(매개변수)
     - 2d
     - webgl (3d를 구현)
@@ -101,3 +95,6 @@ var ctx = canvase.getContext(contextType, contextAttributes);
 
 
 참조 [Jaeeun_새싹개발자](https://blog.naver.com/jaeeun_98/222098143439 '네이버 블로그')
+
+
+lineWidth
