@@ -1,5 +1,5 @@
 ---
-title : ".getContext"
+title : "canvasAPI"
 category :
     - JavaScript
 tag :
