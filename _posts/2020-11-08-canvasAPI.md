@@ -7,6 +7,9 @@ tag :
 toc : true
 ---
 
+# canvas
+css는 물론 js에서까지 사이즈를 정해줘야 정상적으로 선이 그려짐
+
 ### HTMLCanvasElement.getContext()
 canvas의 드로잉 context를 반환하는 메소드
 드로잉에 필요한 속성과 함수를 가진 객체를 생성함
