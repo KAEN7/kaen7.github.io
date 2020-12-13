@@ -1,10 +1,7 @@
 ---
-title : "canvasAPI"
-category :
-    - JavaScript
-tag :
-    - JavaScript
-toc : true
+title: canvasAPI
+categories: [JavaScript]
+comments: true
 ---
 
 # canvas

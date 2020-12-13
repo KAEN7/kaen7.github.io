@@ -1,10 +1,7 @@
 ---
-title : "자바스크립트에서 CSS 바꾸기"
-category :
-    - JAVASCRIPT
-tag :
-    - JAVASCRIPT, CSS
-toc : true
+title: 자바스크립트에서 CSS 바꾸기
+categories: [JavaScript]
+comments: true
 ---
 
 # JAVASCRIPT

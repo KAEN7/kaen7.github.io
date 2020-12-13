@@ -1,10 +1,7 @@
 ---
-title : "Git 사용법"
-category :
-    - GIT
-tag :
-    - GIT, GITHUB
-toc : true
+title: Git 사용법
+categories: [GIT]
+comments: true
 ---
 
 # git

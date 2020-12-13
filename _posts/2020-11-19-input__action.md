@@ -1,10 +1,7 @@
 ---
-title : "input action 변경"
-category :
-    - JAVASCRIPT
-tag :
-    - JAVASCRIPT, jQuery
-toc : true
+title: input action 변경
+categories: [JavaScript]
+comments: true
 ---
 
 # input action 변경

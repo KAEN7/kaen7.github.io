@@ -1,11 +1,9 @@
 ---
-title : "calculator"
-category :
-    - JavaScript
-tag :
-    - JavaScript
-toc : true
+title: calculator
+categories: [JavaScript]
+comments: true
 ---
+
 # 계산기 코드
 
 ```html

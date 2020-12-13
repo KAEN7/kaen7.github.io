@@ -1,10 +1,7 @@
 ---
-title : "addEventListner"
-category :
-    - JavaScript
-tag :
-    - JavaScript
-toc : true
+title: addEventListner
+categories: [JavaScript]
+comments: true
 ---
 
 # addEventListner()

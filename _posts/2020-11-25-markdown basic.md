@@ -1,10 +1,7 @@
 ---
-title : "markdown 정리"
-category :
-    - markdown
-tag :
-    - markdown
-toc : true
+title: markdown basic
+categories: [markdown]
+comments: true
 ---
 
 \#은 Header를 의미합니다.

@@ -1,10 +1,7 @@
 ---
-title : "iframe 가로세로 비율"
-category :
-    - CSS
-tag :
-    - CSS
-toc : true
+title: iframe 가로세로 비율
+categories: [CSS]
+comments: true
 ---
 
 # iframe 감싸주기

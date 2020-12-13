@@ -1,10 +1,7 @@
 ---
-title : "input form"
-category :
-    - HTML
-tag :
-    - HTML, input, form
-toc : true
+title: input form
+categories: [HTML]
+comments: true
 ---
 
 # label
