@@ -21,7 +21,7 @@ user:
   name: kaen
   pic: /assets/img/cat.jpg
   picAlt: "kaen"
-  job: Frontend Developer
+  job: I wanna Frontend Developer
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
