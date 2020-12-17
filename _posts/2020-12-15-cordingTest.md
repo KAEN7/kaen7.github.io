@@ -12,7 +12,7 @@ comments: true
 ### 가운데 글자 가져오기
 
 - 문제
-    [가운데글자가져오기.png](githubpage\assets\img\코테_가운데글자가져오기.png)
+    ![가운데글자가져오기](githubpage\assets\img\코테_가운데글자가져오기.png)
 
 - 풀이
     [너굴의SURI블로그](https://blog.naver.com/tcloe8/221562781862)
