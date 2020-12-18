@@ -103,9 +103,75 @@ let n = 123;
 n = 12.345;
 ```
 
+숫자형은 정수 및 부동소수점 숫자를 나타냄
 
+#### 문자형
+자바스크립트에선 문자열(string)을 따옴표로 묶음
+``` javascript
+let str = "Hello!";
+let str2 = 'Single quotes are ok too';
+let phrase = `can embed another ${str}`;
+```
 
+따옴표에는 세 종류가 있음
+1. 큰따옴표: `"Hello"`
+2. 작은따옴표: `'Helllo'`
+3. 역 따옴표(백틱): ``Hello``
 
+백틱으로 변수나 표현식을 감싼 후 `${...}`안에 넣어주면, 원하는 변수나 표현식을 문자열 중간에 쉽게 얻을 수 있음
+
+#### 불린형
+불린형(논리 타입)은 `true`와 `false` 두가지 값밖에 없는 자료형임
+`true`는 긍정, `false`는 부정을 의미함
+
+#### null 값
+`null` 값은 오로지 `null` 값만 포함하는 별도의 자료형
+
+``` javascript
+let age = null;
+```
+
+자바스크립트에선 null을 '존재하지 않는 값', '비어있는 값', '알수 없는 값'으로 사용
+
+#### undefined 값
+`undefined`는 `null` 값처럼 자신만의 자료형을 형성함
+`undefined`는 '값이 할당되지 않은 상태'를 나타낼 떄 사용
+
+#### 객체
+`객체(object)` 형은 특수한 자료형임
+객체형을 제외한 다른 자료형은 문자열이든 숫자든 한 가지만 표현할 수 있기에 원시 자료형이라 불림
+
+#### 심볼
+`심볼(symbol)`형은 객체의 고유한 식별자를 만들때 사용됨
+
+#### typeof 연산자
+`typeof` 연산자는 인수의 자료형을 반환함  
+자료형에 따라 처리 방식을 다르게 하고 싶거나 변수의 자료형을 빠르게 알아내고자 할때 유용
+
+`typeof` 연산자는 두 가지 형태의 문법을 지원함
+1. 연산자: `typeof x`
+2. 함수: `typeof(x)`
+
+예시
+``` javascript
+typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+typeof Math // "object"  (1)
+
+typeof null // "object"  (2)
+
+typeof alert // "function"  (3)
+```
 
 
 
