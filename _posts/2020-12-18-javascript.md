@@ -173,6 +173,52 @@ typeof null // "object"  (2)
 typeof alert // "function"  (3)
 ```
 
+### 형 변환
+함수와 연산자에 전달되는 값은 대부분 적절한 자료형으로 자동 변환됨. 이런 과정을 '형 변환'이라고 함
+
+#### 문자형으로 변환
+문자형의 값이 필요할 때 일어남
+
+`alert`메소드는 배개변수로 문자형을 받기 때문에 `alert(value)`에서 value 문자형이어야 합니다. 
+만약 다른 형의 값을 전달받으면 이 값은 문자형으로 자동 변환됨
+
+`String(value)` 함수를 호출해 전달받은 값을 문자열로 변환할 수 있음
+``` javascript
+let value = true;
+console.log(typeof value); // boolean
+
+value = String(value); // 변수 value엔 문자열 'true'가 저장됨
+console.log(typeof value); // string
+```
+
+#### 숫자형으로 변환
+수학과 관련된 함수와 표현식에서 자동으로 일어남
+
+숫자형이 아닌 값에 `/`를 적용한 경우를 예시로 보임
+``` javascript
+console.log('6' / '2'); // 3, 문자열이 숫자형으로 자동변환된 후 연산이 수행됨
+```
+
+`Number(value)`함수를 호출해 주어진 값을 숫자형으로 명시해서 변환할 수 있음
+``` javascript
+let str = '123';
+console.log(typeof str); // string
+
+let num = Number(str); // 문자열 '123'이 숫자 123으로 변환됨
+
+console.log(typeof num) // number
+```
+
+#### 불린형으로 변환
+`Boolean(value)`를 호출하면 명시적으로 불린으로의 형 변환을 수행할 수 있음
+
+변환시 적용되는 규칙
+- 숫자 `0`, 빈 문자열, `null`, `undefined`, `Nan`과 같이 직관적으로 '비어있다고' 느껴지는 값들은 `false`가 됨
+- 그 외의 값은 `true`로 변환됨
+
+
+
+
 
 
 
