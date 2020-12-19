@@ -12,7 +12,7 @@ comments: true
 ### 가운데 글자 가져오기
 
 - 문제
-    ![가운데글자가져오기](githubpage\assets\img\코테_가운데글자가져오기.png)
+    ![가운데글자가져오기](코테_가운데글자가져오기.png)
 
 - 풀이
     [너굴의SURI블로그](https://blog.naver.com/tcloe8/221562781862)
@@ -62,5 +62,26 @@ comments: true
 function solution(s) {
     const mid = Math.floor(s.length/2); // Math.floor() 함수는 주어진 숫자와 같거나 작은 정수중에서 가장 큰 수를 반환함
     return s.length%2 === 1 ? s[mid] : s[mid-1] + s[mid];
+}
+```
+
+### 문자열을 정수로 바꾸기
+
+- 문제
+[문자열을 정수로 바꾸기](코테_문자열을정수로바꾸기.png)
+
+- 풀이
+
+``` javascript
+function solution(s) {
+    return Number(s);
+}
+```
+
+- 다른 사람 풀이
+
+``` javascript
+function solution(s) {
+    return s/1;
 }
 ```
