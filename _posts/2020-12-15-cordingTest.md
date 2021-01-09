@@ -1,11 +1,8 @@
 ---
-title: 자바스크립트 코딩테스트
-categories: [JavaScript]
+title: 가운데글자 가져오기
+categories: [cordingTest]
 comments: true
 ---
-
-# 프로그래머스 코딩테스트
-프로그래머스에서 나온 문제들을 풀어보고 해석해본것을 작성한 문서입니다.
 
 ## 1단계
 
