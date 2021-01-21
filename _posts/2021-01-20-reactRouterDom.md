@@ -7,6 +7,25 @@ comments: true
 # react-router-dom이란?
 페이지를 이동할때 react-router-dom이란 것을 이용한다
 
+- router 적용
+    라우터를 사용하기 위해선 최상위 컴포넌트를 묶고 시작해야함
+
+    ``` javascript
+    import React from 'react';
+    import App from './App';
+    import { BrowserRouter } from 'react-router-dom';
+    
+    function Root() {
+        return (
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        )
+    }
+
+    export default Root;
+    ```
+
 - react-router-dom 패키지
     |패키지|사용처|
     |-|-|-|
@@ -35,6 +54,3 @@ comments: true
     |Route|컴포넌트의 속성에 설정된 URL과 현재 경로가 일치하면 해당하는 컴포넌트, 함수를 렌더링|
     |Link|HTML에 'a'태그와 비슷하며 to속성에 설정된 링크로 이동함(href와 유사).<br>history 스택에 저장됨|
     |Switch|자식 컴포넌트 Route 또는 Redirect 중 매치되는 첫번째 요소를 랜더링.<br>Switch를 사용하면 BrowerRouter만 사용할 때와는 다르게 하나의 매칭되는 요소만 랜더링한다는 점을 보장해줌.<br>사용하지 않을 경우 매칭되는 모두를 랜더링함|
-
-https://likejirak.tistory.com/66
-https://velog.io/@kwonh/React-react-router-dom-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
