@@ -16,7 +16,7 @@ comments: true
 웹 기반 양식에서 사용자의 데이터를 주고 받을 수 있는 대화형 컨트롤을 생성
 HTML에서 제일 강력하고 복잡한 요소
 
-```
+``` html
 <form>
     <input type='text'>
 </form>
@@ -34,36 +34,39 @@ HTML에서 제일 강력하고 복잡한 요소
 
 백엔드 서버에 양식을 전달해서 정보를 처리할 수 있게 하는 역할
 
-```
-<form 속성 = '속성 값'></form>
+``` html
+<form 속성='속성값'></form>
 ```
 
 - 속성
-    - action
-    폼 데이터가 전송할 서버의 스크립트 파일을 지정
+    - action  
+        폼 데이터가 전송할 서버의 스크립트 파일을 지정
 
-    ```
-    <form action='전송위치'></form>
-    ```
+        ``` html
+        <form action='전송위치'></form>
+        ```
 
     - method
         폼을 전송할 방식을 선택
-        - get
+        - get  
         url로 넘어가는 방식으로 클라이언트가 폼 데이터를 이름과 값이 결합된 형태로 전달
         전송 가능한 데이터의 크기에 한계가 있으며, 전송 내용이 그대로 노출됨
 
-        - post
+        - post  
         클라이언트와 서버간의 약속된 형식으로 인코딩하여 서버로 전송하는 방식
         데이터를 body로 연결하여 전송하는 방식
         웹 브라우저에서 접근이 불가능해서 get 방식보다 보안에 강함
         전송할 수 있는 데이터의 길이에 제한이 없음
 
-    ```
-    <form method='post'></form>
-    ```
+            ``` html
+            <form method='post'></form>
+            ```
 
-    - target
+    - target  
         데이터를 제출한 후 받은 응답을 표시할 위치를 나타내는 속성
+        ``` html
+        <form target='_self'></form>
+        ```
 
         - 키워드
             - _self
@@ -75,8 +78,5 @@ HTML에서 제일 강력하고 복잡한 요소
             - _top
             최상단 브라우저에 표시
 
-    ```
-    <form target='_self'></form>
-    ```
 
 [출처](https://blog.naver.com/jaeeun_98/222071568997 '새싹개발자')
