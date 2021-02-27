@@ -53,7 +53,7 @@ const middleware = (store) => (next) => (action) => {
     return result; // 반환되는 값은 dispatch(action)의 결과물이 됨
   };
 
-  export default myLogger;
+  export default 미들웨어;
   ```
 
 ## 미들웨어 적용
@@ -63,5 +63,3 @@ const middleware = (store) => (next) => (action) => {
 ```jsx
 const store = createStore(rootReducer, applyMiddleware(미들웨어이름));
 ```
-
-## 미들웨어 수정
