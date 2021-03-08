@@ -33,14 +33,14 @@ const middleware = (store) => (next) => (action) => {
 };
 ```
 
-- store
+- store  
   리덕스 스토어 인스턴스이며 안에 `dispatch`, `getState`, `subscribe` 내장함수가 들어있음
 
-- next
+- next  
   액션을 다음 미들웨어에게 전달하는 함수, `next(action)`형태로 사용함  
    다음 미들웨어가 없다면 리듀서에게 액션을 전달해줌
 
-- action
+- action  
   현재 처리하고 있는 액션 객체
 
 - 예시
