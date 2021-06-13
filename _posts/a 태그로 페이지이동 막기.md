@@ -1,0 +1,13 @@
+# a 태그로 페이지이동 막기
+
+```jsx
+return (
+	<div>
+		<a href='javascript:void(0);' onClick={...}>
+			페이지 이동 제한!
+		</a>
+	</div>
+)
+```
+
+위처럼 `javascript:void(0);` 를 통해 href로 페이지 이동을 막고 onClick 이벤트만 사용할 수 있다
